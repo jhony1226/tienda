@@ -8,7 +8,7 @@ dotenv.config();  //para qe cuando se ejecute el servidor ejecuta el index y ded
 const app =express();
 
 app.use(express.json());
-app.use(cors()); 
+app.use(cors());     
 app.use("/api/producto",producto);
 
 app.listen(process.env.PORT, ()=> console.log("ejecutando en el puerto:  "+ process.env.PORT));
